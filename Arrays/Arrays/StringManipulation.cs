@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DS.Arrays
+namespace Arrays
 {
     public class StringManipulation
     {
