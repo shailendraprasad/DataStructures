@@ -15,6 +15,8 @@ namespace Trees
             tr.insert(10);
             tr.insert(11);
 
+            tr.lookup(10);
+            tr.lookup(99);
             print2D(tr.root);
         }
 
