@@ -2,6 +2,9 @@
 
 namespace Recursions
 {
+    /// <summary>
+    /// Class for Recursion Practise
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
@@ -10,6 +13,11 @@ namespace Recursions
            Console.WriteLine($"Fibonacci Sum is {CalculateFibonacci(9)}");
         }
 
+        /// <summary>
+        /// Calculating Sum of Factorial
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         static int ClaulateFactorial(int n)
         {
             if(n == 2)
@@ -20,6 +28,11 @@ namespace Recursions
             return x;
         }
 
+        /// <summary>
+        /// Recursion for Fibonacci Calculation
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         static int CalculateFibonacci(int n)
         {
             if (n < 2)
