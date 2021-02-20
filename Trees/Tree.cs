@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Trees
 {
@@ -41,6 +43,12 @@ namespace Trees
             return null;
         }
 
+        /// <summary>
+        /// Inserting the value in the tree
+        /// Loop with the while until the value is inserted
+        /// Using the BST
+        /// </summary>
+        /// <param name="number"></param>
         public void insert(int number) {
             bool toInsert = true;
             
@@ -70,5 +78,31 @@ namespace Trees
                 }
             }
         } 
+
+        /// <summary>
+        /// Acheived through using queue
+        /// Visit nodes from left to right and add them in queue
+        /// </summary>
+        public void BreadhFirstSearch()
+        {
+            List<int> final = new List<int>();
+            Node currentNode = this.root;
+            Queue<Node> queue = new Queue<Node>();
+
+            queue.Enqueue(currentNode);
+
+            while(queue.Count > 0)
+            {
+                var nodeTemp = queue.Dequeue();
+                if (nodeTemp != null && nodeTemp.item != null)
+                {
+                    final.Add(nodeTemp.item.Value);
+                    queue.Enqueue(nodeTemp.left);
+                    queue.Enqueue(nodeTemp.right);
+                }
+            }
+
+            final.ForEach(x => Console.WriteLine(x));
+        }
     }
 }

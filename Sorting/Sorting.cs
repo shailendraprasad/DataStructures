@@ -48,11 +48,10 @@ namespace Sorting
         /// <param name="a"></param>
         public static void SelectionSort(int[] a)
         {
-            int min = 0;
-
             for (int i = 0; i < a.Length; i++)
             {
-                for (int j = 0; j < a.Length - 1; j++)
+                int min = i;
+                for (int j = i; j < a.Length; j++)
                 {
                     if (a[j] < a[min])
                     {
@@ -60,8 +59,8 @@ namespace Sorting
                     }
                 }
 
-                var temp = a[0];
-                a[0] = a[min];
+                var temp = a[i];
+                a[i] = a[min];
                 a[min] = temp;
 
             }
@@ -76,7 +75,6 @@ namespace Sorting
         /// <param name="a"></param>
         public static void InsertionSort(int[] a)
         {
-
             for (int i = 1; i < a.Length; i++)
             {
                 int markerValue = a[i];

@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graphs", "Graphs\Graphs.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recursions", "Recursions\Recursions.csproj", "{20AE6C83-BF72-471A-BE5F-2AFB71A990EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.csproj", "{0BB324E2-6BA3-42EC-9626-65C4FD2BB3ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sorting", "Sorting\Sorting.csproj", "{0BB324E2-6BA3-42EC-9626-65C4FD2BB3ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searching", "Searching\Searching.csproj", "{8FD76262-E7D0-4A8D-A31D-D5947C25A85E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{0BB324E2-6BA3-42EC-9626-65C4FD2BB3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BB324E2-6BA3-42EC-9626-65C4FD2BB3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BB324E2-6BA3-42EC-9626-65C4FD2BB3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FD76262-E7D0-4A8D-A31D-D5947C25A85E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FD76262-E7D0-4A8D-A31D-D5947C25A85E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FD76262-E7D0-4A8D-A31D-D5947C25A85E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FD76262-E7D0-4A8D-A31D-D5947C25A85E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

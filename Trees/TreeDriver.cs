@@ -2,7 +2,7 @@
 
 namespace Trees
 {
-    class Program
+    class TreeDriver
     {
         static readonly int COUNT = 10;
 
@@ -17,6 +17,7 @@ namespace Trees
 
             tr.lookup(10);
             tr.lookup(99);
+            tr.BreadhFirstSearch();
             print2D(tr.root);
         }
 
