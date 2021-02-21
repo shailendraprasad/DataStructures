@@ -102,7 +102,57 @@ namespace Trees
                 }
             }
 
+            Console.WriteLine("Printing the BFS Below");
+
             final.ForEach(x => Console.WriteLine(x));
+        }
+
+        public void DFSInorder()
+        {
+            Console.WriteLine("Printing the DFS Inorder Below");
+            DFSInorder(this.root);
+        }
+
+        private void DFSInorder(Node r)
+        {
+            if(r.item !=null)
+            {
+                DFSInorder(r.left);
+                Console.WriteLine(r.item);
+                DFSInorder(r.right);
+            }
+        }
+
+        public void DFSPreOrder()
+        {
+            Console.WriteLine("Printing the DFS PreOrder Below");
+            DFSPreOrder(this.root);
+        }
+
+        private void DFSPreOrder(Node r)
+        {
+            if (r.item != null)
+            {
+                Console.WriteLine(r.item);
+                DFSPreOrder(r.left);
+                DFSPreOrder(r.right);
+            }
+        }
+
+        public void DFSPostorder()
+        {
+            Console.WriteLine("Printing the DFS PostOrder Below");
+            DFSPostorder(this.root);
+        }
+
+        private void DFSPostorder(Node r)
+        {
+            if (r.item != null)
+            {
+                DFSPostorder(r.left);
+                DFSPostorder(r.right);
+                Console.WriteLine(r.item);
+            }
         }
     }
 }

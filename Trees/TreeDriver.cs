@@ -14,10 +14,13 @@ namespace Trees
             tr.insert(19);
             tr.insert(10);
             tr.insert(11);
-
+            tr.insert(9);
             tr.lookup(10);
             tr.lookup(99);
             tr.BreadhFirstSearch();
+            tr.DFSInorder();
+            tr.DFSPreOrder();
+            tr.DFSPostorder();
             print2D(tr.root);
         }
 
