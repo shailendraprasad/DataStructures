@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace DS
+namespace Arrays
 {
-    class Program
+    class ArraysInit
     {
         static void Main(string[] args)
         {
@@ -11,6 +11,13 @@ namespace DS
 
             Arrays.MergeSortedArray merge = new Arrays.MergeSortedArray();
             merge.MergeArray(new int[] { 1, 3, 5 }, new int[] { 2, 31, 45 });
+
+            DynamicArray<int> array = new DynamicArray<int>();
+            array.Add(1);
+            array.Add(15);
+            array.Add(9);
+            Console.WriteLine(array.RemoveAt(1));
+            Console.WriteLine(array.ToString());
         }
     }
 }
